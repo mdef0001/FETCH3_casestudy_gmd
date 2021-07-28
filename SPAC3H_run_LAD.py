@@ -75,7 +75,6 @@ def Porous_media_root(arg,params,dz,theta):
      
     #KEEPING CAPACITANCE CONSTANT - using value according to VERMA ET AL., 2014
     C=np.zeros(shape=nz_r-nz_s)
-    #C[:]=1.1*10**(-11)  #(1/Pa)
     
     #CAPACITANCE FUNCTION AS IN BOHRER ET AL 2005
 
@@ -399,8 +398,7 @@ def Picard(H_initial):
             #SINK/SOURCE ARRAY : concatenating all sinks and sources in a vector
             Pt_2d[:,i]=Pt_2d[:,i]*LAD[:]  #m/s * 1/m = [1/s]
             S_S[:,i]=np.concatenate((TS,-Pt_2d[:,i])) #vector with sink and sources
-            
-            
+
             
             #dummy variable to help breaking the multiplication into parts
             matrix2=multi_dot([Kbarplus,DeltaPlus,hnp1m]) - multi_dot([Kbarminus,DeltaMinus,hnp1m])
