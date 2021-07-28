@@ -34,10 +34,10 @@ from scipy.interpolate import interp1d
 ############################## Opening files as dataframes #######################
 
 BASE = Path.cwd()
-path_1= BASE / "Precipitation_Verma.csv"
+path_1= BASE / "Precipitation_Verma2014.csv"
 df_rain=pd.read_csv(path_1, float_precision='high',header=None)
 
-path_2 = BASE / "Derek_data_up.csv"
+path_2 = BASE / "Dataset_Verma2014.csv"
 
 date1 = pd.to_datetime('2007-01-01 00:00:00') #begining of simulation
 date2=pd.to_datetime('2007-06-09 00:00:00')   #end of simulation 
