@@ -13,7 +13,7 @@ import scipy
 from numpy.linalg import multi_dot
 
 #importing variables 
-from SPAC3H_loading_LAD import params, dt0, dt, tmax, dz, nz, nz_r, nz_s, z, z_soil, z_upper, Soil_depth, stop_tol, \
+from FETCH3_loading_LAD import params, dt0, dt, tmax, dz, nz, nz_r, nz_s, z, z_soil, z_upper, Soil_depth, stop_tol, \
     Root_depth, q_rain, step_time, Head_bottom_H, H_initial, S, nz_sand, nz_clay, clay_d, \
     f_Ta_2d, f_s_2d, f_d_2d, VPD_2d, NET_2d, delta_2d, \
     LAD, hx50, ga, gama, lamb, Cp, gb, gsmax, nl, Emax, UpperBC, BottomBC,\
